@@ -1,11 +1,10 @@
-def c():
-    celsius = 30 
-    fahrenheit = (celsius * 9/5) + 32
-    print("%2f celsius is equal to %.2f fanhrenheit" %(celsius,fahrenheit))
-c()
- 
-def f():
-    fahrenheit = 86
-    celsius = (fahrenheit - 32) * 5/9 
-    print("%.2f fahrenheit is equal to %0.2f celsius" %(fahrenheit, celsius))
-f()
+def convert_to_celcius(farenheit):
+    celcius = 5/9*(farenheit-32)
+    return celcius
+def convert_to_farenheit(celcius):
+    farenheit = (9/5 * celcius) + 32
+    return farenheit
+c = convert_to_celcius(115)
+f = convert_to_farenheit(c)
+print(c)
+print(f)

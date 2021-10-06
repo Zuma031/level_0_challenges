@@ -1,12 +1,13 @@
-def common(text):
-    string1 = "natural"
-    string2 = "neutral"
+import string
+def print_Common(word_i, word_ii):
+    common = "Common letters: "
+    temp_string_i = word_i.lower()  
+    temp_string_ii = word_ii.lower() 
+    for i in temp_string_ii:  
+        if(temp_string_i.count(i) > 0):
+            if(i != " "):
+                common+=i+", "
+    common= common[:-2] 
+    return common
 
-    s1 = set(string1)
-    s2 = set(string2)
-
-    common_letters = s1 & s2
-
-    print(", ".join(s1 & s2))
-
-common("common_letters")
+print(print_Common("natural","neutral"))

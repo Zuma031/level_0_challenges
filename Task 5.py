@@ -1,8 +1,11 @@
-def triangle():
-    e = 9
-    f = 10
-    g = 11
-    s = (e + f + g) / 2
-    area = (s*(s-e)*(s-f)*(s-g)) ** 0.5
-    print("Area of a triangle is %0.2f" %area)
-triangle()
+import math 
+def area_of_triangle(x,y,z):
+    s_length = (x+y+z)/2
+    area_t = (s_length-x)*(s_length-y)*(s_length-z)
+    area_t = area_t*s_length
+    area_t = math.sqrt(area_t)
+    return area_t
+
+
+area_of_t = area_of_triangle(6,7,8)
+print(str(area_of_t))
