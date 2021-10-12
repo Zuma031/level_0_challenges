@@ -1,12 +1,13 @@
-def maximum(num_1,*nums):
-    max = 0
-    for num_i in nums:
-        if(num_i > max):
-            max = num_i
-    if(num_1 > max):
-        return num_1
-    else:
-        return max
+def maximum_num(*numbers):
+    biggest = numbers[0]
+    for num in numbers:
+        if num > biggest:
+            biggest = num
+    return biggest
+print(maximum_num(-52, -3, -63, -23,))
 
-max = maximum(3,8,22,54,29,86,1,13,32)
-print(max)
+
+#def max_num(*numbers):
+ # return max(*numbers)
+
+#print(max_num(-5, 3, 0, -25, 7, 10, -4, 30, -56, 16, 17, -21)) 

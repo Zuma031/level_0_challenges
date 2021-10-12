@@ -1,11 +1,8 @@
-import math 
-def area_of_triangle(x,y,z):
-    s_length = (x+y+z)/2
-    area_t = (s_length-x)*(s_length-y)*(s_length-z)
-    area_t = area_t*s_length
-    area_t = math.sqrt(area_t)
-    return area_t
+def area_of_triangle(a, b, c):
+    s = (a + b + c) / 2
+    area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+    return area
 
 
-area_of_t = area_of_triangle(6,7,8)
-print(str(area_of_t))
+print(area_of_triangle(4, 5, 6))
+

@@ -1,4 +1,3 @@
-import string
 def printVowels(word):
     vowels = "Vowels: "
     temp_string = word.lower()

@@ -1,4 +1,3 @@
-import string
 def print_Common(word_i, word_ii):
     common = "Common letters: "
     temp_string_i = word_i.lower()  
@@ -10,4 +9,4 @@ def print_Common(word_i, word_ii):
     common= common[:-2] 
     return common
 
-print(print_Common("natural","neutral"))
+print(print_Common("Ear","Dear"))
